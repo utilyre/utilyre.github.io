@@ -1,0 +1,130 @@
+resources:
+  - title: Introduction to Computer Graphics
+    associations: [University of Utah]
+    authors:
+      - Cem Yuksel
+    links:
+      - https://graphics.cs.utah.edu/courses/cs4600/fall2021
+      - https://youtu.be/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
+    kind: course
+    tags: [computer graphics]
+
+  - title: Ray Tracing in One Weekend
+    associations: []
+    authors:
+      - Peter Shirley
+      - Trevor D. Black
+      - Steve Hollasch
+    links:
+      - https://raytracing.github.io
+    kind: book
+    tags: [computer graphics, ray tracing, c++]
+
+  - title: 'A Gentle Introduction to ReSTIR: Path Reuse in Real-time'
+    associations: [ACM SIGGRAPH 2023]
+    authors:
+      - Chris Wyman
+      - Markus Kettunen
+      - Daqi Lin
+      - Benedikt Bitterli
+      - Cem Yuksel
+      - Wojciech Jarosz
+      - Pawel Kozlowski
+      - Giovanni De Francesco
+    links:
+      - https://intro-to-restir.cwyman.org
+      - https://dl.acm.org/doi/10.1145/3587423.3595511
+    kind: course
+    tags: [computer graphics, real-time, ray tracing]
+
+  - title: GPU Gems
+    associations: [NVIDIA]
+    authors: []
+    links:
+      - https://developer.nvidia.com/gpugems/gpugems
+    kind: book
+    tags: [computer graphics, gpgpu]
+
+  - title: GPU Gems 2
+    associations: [NVIDIA]
+    authors: []
+    links:
+      - https://developer.nvidia.com/gpugems/gpugems2
+    kind: book
+    tags: [computer graphics, gpgpu]
+
+  - title: GPU Gems 3
+    associations: [NVIDIA]
+    authors: []
+    links:
+      - https://developer.nvidia.com/gpugems/gpugems3
+    kind: book
+    tags: [computer graphics, gpgpu]
+
+  - title: 'Physically Based Rendering: From Theory To Implementation'
+    associations: []
+    authors:
+      - Matt Pharr
+      - Wenzel Jakob
+      - Greg Humphreys
+    links:
+      - https://pbrt.org
+      - https://pbr-book.org
+    kind: book
+    tags: [computer graphics, mathematics, ray tracing, c++]
+
+  - title: Easing Functions
+    associations: []
+    authors:
+      - Andrey Sitnik
+      - Ivan Solovev
+    links:
+      - https://easings.net
+    kind: cheat sheet
+    tags: [mathematics]
+
+  - title: 2D Distance Functions
+    associations: []
+    authors:
+      - Inigo Quilez
+    links:
+      - https://iquilezles.org/articles/distfunctions2d
+    kind: cheat sheet
+    tags: [mathematics]
+
+  - title: 3D Distance Functions
+    associations: []
+    authors:
+      - Inigo Quilez
+    links:
+      - https://iquilezles.org/articles/distfunctions
+    kind: cheat sheet
+    tags: [mathematics]
+
+  - title: Writing an Efficient Vulkan Renderer
+    associations: []
+    authors:
+      - Arseny Kapoulkine
+    links:
+      - https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer
+    kind: article
+    tags: [vulkan, optimization]
+
+  - title: Vulkan Lecture Series
+    associations: [TU Wien]
+    authors:
+      - Johannes Unterguggenberger
+    links:
+      - https://youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
+    kind: series
+    tags: [vulkan]
+
+  - title: Niagara
+    associations: []
+    authors:
+      - Arseny Kapoulkine
+    links:
+      - https://github.com/zeux/niagara
+      - https://youtube.com/playlist?list=PL0JVLUVCkk-l7CWCn3-cdftR0oajugYvd
+    kind: project
+    tags: [vulkan, computer graphics, c++]
