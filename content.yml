@@ -1,13 +1,14 @@
 resources:
   - title: Introduction to Computer Graphics
-    associations: [University of Utah]
+    associations:
+      - University of Utah
     authors:
       - Cem Yuksel
     links:
       - https://graphics.cs.utah.edu/courses/cs4600/fall2021
       - https://youtu.be/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
     kind: course
-    tags: [computer graphics]
+    tags: [computer graphics, webgl]
 
   - title: Ray Tracing in One Weekend
     associations: []
@@ -18,10 +19,11 @@ resources:
     links:
       - https://raytracing.github.io
     kind: book
-    tags: [computer graphics, ray tracing, c++]
+    tags: [computer graphics, ray tracing, c++, offline rendering]
 
   - title: 'A Gentle Introduction to ReSTIR: Path Reuse in Real-time'
-    associations: [ACM SIGGRAPH 2023]
+    associations:
+      - ACM SIGGRAPH 2023
     authors:
       - Chris Wyman
       - Markus Kettunen
@@ -35,10 +37,11 @@ resources:
       - https://intro-to-restir.cwyman.org
       - https://dl.acm.org/doi/10.1145/3587423.3595511
     kind: course
-    tags: [computer graphics, real-time, ray tracing]
+    tags: [computer graphics, real-time rendering, ray tracing]
 
   - title: GPU Gems
-    associations: [NVIDIA]
+    associations:
+      - NVIDIA
     authors: []
     links:
       - https://developer.nvidia.com/gpugems/gpugems
@@ -46,7 +49,8 @@ resources:
     tags: [computer graphics, gpgpu]
 
   - title: GPU Gems 2
-    associations: [NVIDIA]
+    associations:
+      - NVIDIA
     authors: []
     links:
       - https://developer.nvidia.com/gpugems/gpugems2
@@ -54,7 +58,8 @@ resources:
     tags: [computer graphics, gpgpu]
 
   - title: GPU Gems 3
-    associations: [NVIDIA]
+    associations:
+      - NVIDIA
     authors: []
     links:
       - https://developer.nvidia.com/gpugems/gpugems3
@@ -71,7 +76,7 @@ resources:
       - https://pbrt.org
       - https://pbr-book.org
     kind: book
-    tags: [computer graphics, mathematics, ray tracing, c++]
+    tags: [computer graphics, mathematics, ray tracing, c++, offline rendering]
 
   - title: Easing Functions
     associations: []
@@ -108,10 +113,11 @@ resources:
     links:
       - https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer
     kind: article
-    tags: [vulkan, optimization]
+    tags: [vulkan, optimization, real-time rendering]
 
   - title: Vulkan Lecture Series
-    associations: [TU Wien]
+    associations:
+      - TU Wien
     authors:
       - Johannes Unterguggenberger
     links:
@@ -127,7 +133,7 @@ resources:
       - https://github.com/zeux/niagara
       - https://youtube.com/playlist?list=PL0JVLUVCkk-l7CWCn3-cdftR0oajugYvd
     kind: project
-    tags: [vulkan, computer graphics, c++]
+    tags: [vulkan, computer graphics, c++, real-time rendering]
 
   - title: Learn OpenGL
     associations: []
@@ -146,4 +152,4 @@ resources:
     links:
       - https://thebookofshaders.com
     kind: book
-    tags: [computer graphics, glsl]
+    tags: [computer graphics]
