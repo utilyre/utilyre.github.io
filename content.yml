@@ -128,3 +128,22 @@ resources:
       - https://youtube.com/playlist?list=PL0JVLUVCkk-l7CWCn3-cdftR0oajugYvd
     kind: project
     tags: [vulkan, computer graphics, c++]
+
+  - title: Learn OpenGL
+    associations: []
+    authors:
+      - Joey de Vries
+    links:
+      - https://learnopengl.com
+    kind: book
+    tags: [opengl, computer graphics, c++]
+
+  - title: The Book of Shaders
+    associations: []
+    authors:
+      - Patricio G. Vivo
+      - Jen Lowe
+    links:
+      - https://thebookofshaders.com
+    kind: book
+    tags: [computer graphics, glsl]
