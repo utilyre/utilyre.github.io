@@ -1,0 +1,53 @@
+{{ define "Resource" }}
+	<article class="flex flex-col">
+		<div class="flex justify-between gap-4">
+			<data class="text-neutral-300 whitespace-nowrap" value="{{ .Kind }}">{{ .Kind }}</data>
+
+			<div class="pt-1">
+				<h3 class="text-center text-lg">{{ .Title }}</h3>
+
+				<ul class="flex flex-wrap gap-x-1.5 justify-center">
+					{{ range .Associations }}
+						<li class="text-sm text-center text-neutral-300 after:content-[','] last:after:content-none">{{ . }}</li>
+					{{ end }}
+				</ul>
+			</div>
+			
+			<time class="text-neutral-300 whitespace-nowrap" datetime="TODO">1970 Jan 1</time>
+		</div>
+
+		<div class="h-4"></div>
+
+		<ul class="flex flex-wrap gap-x-1.5">
+			{{ range .Authors }}
+				<li class="text-sm text-neutral-300 after:content-[','] last:after:content-none">{{ . }}</li>
+			{{ end }}
+		</ul>
+
+ 		<div class="grow min-h-4"></div>
+
+		<ul class="list-disc list-inside">
+			{{ range .Links }}
+				<li class="truncate"><a href="{{ . }}" class="underline">{{ . }}</a></li>
+			{{ end }}
+		</ul>
+
+		<div class="h-4"></div>
+
+		<ul class="flex flex-wrap gap-2">
+			{{ range .Tags }}
+				<li class="bg-white text-black text-xs px-1.5 rounded font-bold">{{ . }}</li>
+			{{ end }}
+		</ul>
+	</article>
+{{ end }}
+
+<div class="w-full mx-auto bg-neutral-800">
+	<h2 class="text-4xl underline">Resource Library</h2>
+
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-8 py-4 gap-8">
+		{{ range . }}
+				{{ template "Resource" . }}
+		{{ end }}
+	</div>
+</div>

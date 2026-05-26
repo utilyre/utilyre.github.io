@@ -1,83 +1,74 @@
 package main
 
 import (
+	"bytes"
+	"fmt"
 	"html/template"
+	textemplate "text/template"
+	"io"
 	"log"
 	"os"
+
+	"github.com/goccy/go-yaml"
 )
 
-type Treasure struct {
-	Title   string
-	Authors []string
-	Links   []TreasureLink
-	Tags    []string
-}
-
-type TreasureLink struct {
-	Label string
-	URL   string
-}
-
-var treasures = []Treasure{
-	{
-		Title:   "Introduction to Computer Graphics",
-		Authors: []string{"Cem Yuksel"},
-		Links: []TreasureLink{
-			{"YouTube Playlist", "https://youtube.com/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh"},
-		},
-		Tags: []string{"cg", "course"},
-	},
-	{
-		Title: "Ray Tracing in One Weekend",
-		Authors: []string{
-			"Peter Shierly",
-			"Trevor D. Black",
-			"Steve Hollasch",
-		},
-		Links: []TreasureLink{{"Online Book", "https://raytracing.github.io"}},
-		Tags:  []string{"cg", "cxx"},
-	},
-	{
-		Title: "A Gentle Introduction to ReSTIR",
-		Authors: []string{
-			"Chris Wyman",
-			"Markus Kettunen",
-			"Daqi Lin",
-			"Benedikt Bitterli",
-			"Cem Yuksel",
-			"Wojciech Jarosz",
-			"Pawel Kozlowski",
-			"Giovanni De Francesco",
-		},
-		Links: []TreasureLink{{"Online Course", "https://intro-to-restir.cwyman.org"}},
-		Tags:  []string{"cg", "course"},
-	},
-	{
-		Title:   "GPU Gems by NVIDIA",
-		Authors: []string{"NVIDIA"},
-		Links: []TreasureLink{
-			{"Volume 1", "https://developer.nvidia.com/gpugems/gpugems"},
-			{"Volume 2", "https://developer.nvidia.com/gpugems/gpugems2"},
-			{"Volume 3", "https://developer.nvidia.com/gpugems/gpugems3"},
-		},
-		Tags: []string{"cg"},
-	},
-	{
-		Title:   "Physically Based Rendering",
-		Authors: []string{"Matt Pharr", "Wenzel Jakob", "and Greg Humphreys"},
-		Links:   []TreasureLink{{"Online Book", "https://pbr-book.org"}},
-		Tags:    []string{"cg", "cxx"},
-	},
-}
-
 func main() {
-	t, err := template.ParseFiles("treasure.temp.html")
+	content, err := readContent()
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	err = t.ExecuteTemplate(os.Stdout, "treasures", treasures)
+	Skeleton, err := textemplate.ParseFiles("./templates/Skeleton.html")
 	if err != nil {
 		log.Fatalln(err)
 	}
+
+	ResourceList, err := template.ParseFiles("./templates/ResourceList.html")
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	var buf bytes.Buffer
+	err = ResourceList.Execute(&buf, content.Resources)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	err = Skeleton.Execute(os.Stdout, buf.String())
+	if err != nil {
+		log.Fatalln(err)
+	}
+}
+
+type Content struct {
+	Resources []Resource
+}
+
+type Resource struct {
+	Title        string
+	Associations []string
+	Authors      []string
+	Links        []string
+	Kind         string
+	Tags         []string
+}
+
+func readContent() (Content, error) {
+	f, err := os.Open("./content.yml")
+	if err != nil {
+		return Content{}, fmt.Errorf("os.Open: %v", err)
+	}
+
+	data, err := io.ReadAll(f)
+	if err != nil {
+		return Content{}, fmt.Errorf("io.ReadAll: %v", err)
+	}
+
+	var content Content
+	err = yaml.Unmarshal(data, &content)
+	if err != nil {
+		return Content{}, fmt.Errorf("yaml.Unmarshal: %v", err)
+	}
+
+	return content, nil
 }
