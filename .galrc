@@ -1,1 +1,1 @@
-go run . > ./public/test.html
+go run . > ./public/journal.html

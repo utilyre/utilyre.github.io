@@ -1,29 +1,30 @@
+# each resource must have exactly four fields: title, year, authors, and links
+#
+# title is the official title of the material
+# year is the earliest year listed after the copyright symbol of the material
+# authors is a list of the material's author(s)
+# links is a map from label to url for the material
+
 resources:
   - title: Introduction to Computer Graphics
-    associations:
-      - University of Utah
+    year: 2021
     authors:
       - Cem Yuksel
     links:
-      - https://graphics.cs.utah.edu/courses/cs4600/fall2021
-      - https://youtu.be/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
-    kind: course
-    tags: [computer graphics, webgl]
+      Webpage: https://graphics.cs.utah.edu/courses/cs4600/fall2021
+      Playlist: https://youtu.be/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
 
   - title: Ray Tracing in One Weekend
-    associations: []
+    year: 2018
     authors:
       - Peter Shirley
       - Trevor D. Black
       - Steve Hollasch
     links:
-      - https://raytracing.github.io
-    kind: book
-    tags: [computer graphics, ray tracing, c++, offline rendering]
+      Webpage: https://raytracing.github.io
 
-  - title: 'A Gentle Introduction to ReSTIR: Path Reuse in Real-time'
-    associations:
-      - ACM SIGGRAPH 2023
+  - title: A Gentle Introduction to ReSTIR
+    year: 2023
     authors:
       - Chris Wyman
       - Markus Kettunen
@@ -34,122 +35,348 @@ resources:
       - Pawel Kozlowski
       - Giovanni De Francesco
     links:
-      - https://intro-to-restir.cwyman.org
-      - https://dl.acm.org/doi/10.1145/3587423.3595511
-    kind: course
-    tags: [computer graphics, real-time rendering, ray tracing]
+      Webpage: https://intro-to-restir.cwyman.org
+      Download: https://dl.acm.org/doi/10.1145/3587423.3595511
 
   - title: GPU Gems
-    associations:
-      - NVIDIA
-    authors: []
+    year: 2004
+    authors:
+      - NVIDIA Corporation
     links:
-      - https://developer.nvidia.com/gpugems/gpugems
-    kind: book
-    tags: [computer graphics, gpgpu]
+      Book: https://developer.nvidia.com/gpugems/gpugems
 
   - title: GPU Gems 2
-    associations:
-      - NVIDIA
-    authors: []
+    year: 2005
+    authors:
+      - NVIDIA Corporation
     links:
-      - https://developer.nvidia.com/gpugems/gpugems2
-    kind: book
-    tags: [computer graphics, gpgpu]
+      Book: https://developer.nvidia.com/gpugems/gpugems2
 
   - title: GPU Gems 3
-    associations:
-      - NVIDIA
-    authors: []
+    year: 2006
+    authors:
+      - NVIDIA Corporation
     links:
-      - https://developer.nvidia.com/gpugems/gpugems3
-    kind: book
-    tags: [computer graphics, gpgpu]
+      Book: https://developer.nvidia.com/gpugems/gpugems3
 
-  - title: 'Physically Based Rendering: From Theory To Implementation'
-    associations: []
+  - title: Physically Based Rendering Ed4
+    year: 2023
     authors:
       - Matt Pharr
       - Wenzel Jakob
       - Greg Humphreys
     links:
-      - https://pbrt.org
-      - https://pbr-book.org
-    kind: book
-    tags: [computer graphics, mathematics, ray tracing, c++, offline rendering]
+      Webpage: https://pbrt.org
+      Book: https://pbr-book.org/4ed
 
   - title: Easing Functions
-    associations: []
+    year: 2013
     authors:
       - Andrey Sitnik
       - Ivan Solovev
     links:
-      - https://easings.net
-    kind: cheat sheet
-    tags: [mathematics]
+      Article: https://easings.net
 
   - title: 2D Distance Functions
-    associations: []
+    year: 0
     authors:
       - Inigo Quilez
     links:
-      - https://iquilezles.org/articles/distfunctions2d
-    kind: cheat sheet
-    tags: [mathematics]
+      Article: https://iquilezles.org/articles/distfunctions2d
 
   - title: 3D Distance Functions
-    associations: []
+    year: 0
     authors:
       - Inigo Quilez
     links:
-      - https://iquilezles.org/articles/distfunctions
-    kind: cheat sheet
-    tags: [mathematics]
+      Article: https://iquilezles.org/articles/distfunctions
 
   - title: Writing an Efficient Vulkan Renderer
-    associations: []
+    year: 2020
     authors:
       - Arseny Kapoulkine
     links:
-      - https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer
-    kind: article
-    tags: [vulkan, optimization, real-time rendering]
+      Article: https://zeux.io/2020/02/27/writing-an-efficient-vulkan-renderer
 
   - title: Vulkan Lecture Series
-    associations:
-      - TU Wien
+    year: 2021
     authors:
       - Johannes Unterguggenberger
     links:
-      - https://youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
-    kind: series
-    tags: [vulkan]
+      Playlist: https://youtube.com/playlist?list=PLmIqTlJ6KsE1Jx5HV4sd2jOe3V1KMHHgn
 
   - title: Niagara
-    associations: []
+    year: 2018
     authors:
       - Arseny Kapoulkine
     links:
-      - https://github.com/zeux/niagara
-      - https://youtube.com/playlist?list=PL0JVLUVCkk-l7CWCn3-cdftR0oajugYvd
-    kind: project
-    tags: [vulkan, computer graphics, c++, real-time rendering]
+      Project: https://github.com/zeux/niagara
+      Playlist: https://youtube.com/playlist?list=PL0JVLUVCkk-l7CWCn3-cdftR0oajugYvd
 
   - title: Learn OpenGL
-    associations: []
+    year: 2014
     authors:
       - Joey de Vries
     links:
-      - https://learnopengl.com
-    kind: book
-    tags: [opengl, computer graphics, c++]
+      Book: https://learnopengl.com
 
   - title: The Book of Shaders
-    associations: []
+    year: 2015
     authors:
       - Patricio G. Vivo
       - Jen Lowe
     links:
-      - https://thebookofshaders.com
-    kind: book
-    tags: [computer graphics]
+      Book: https://thebookofshaders.com
+
+  - title: GDB
+    year: 2018
+    authors:
+      - Nakst
+    links:
+      Article: https://handmade.network/forums/articles/t/2883-gdb
+
+  - title: Writing C Software without the Standard Library
+    year: 2020
+    authors:
+      - Thibault Coppex
+    links:
+      Article: https://gist.github.com/tcoppex/443d1dd45f873d96260195d6431b0989
+
+  - title: Learn LaTeX
+    year: 2020
+    authors:
+      - David Carlisle
+      - Joseph Wright
+    links:
+      Course: https://learnlatex.org
+
+  - title: Learn LaTeX in 30 Minutes
+    year: 0
+    authors:
+      - Overleaf
+    links:
+      Article: https://overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+
+  - title: Getting Started with TeX, LaTeX, and Friends
+    year: 2025
+    authors:
+      - The TeX Users Group
+    links:
+      Webpage: https://tug.org/begin
+
+  - title: The Lost Art of Structure Packing
+    year: 2018
+    authors:
+      - Eric S. Raymond
+    links:
+      Article: http://catb.org/esr/structure-packing
+
+  - title: Write a Hash Table in C
+    year: 2017
+    authors:
+      - James Routley
+    links:
+      Tutorial: https://github.com/jamesroutley/write-a-hash-table
+
+  - title: Figuring out round, floor, and ceil with Integer Division
+    year: 2022
+    authors:
+      - bµg
+    links:
+      Article: https://blog.pkh.me/p/36-figuring-out-round%2C-floor-and-ceil-with-integer-division.html
+
+  - title: WebGPU Fundamentals
+    year: 2023
+    authors:
+      - Gregg Tavares
+    links:
+      Book: https://webgpufundamentals.org
+
+  - title: Math Primer for Graphics and Game Development
+    year: 2011
+    authors:
+      - Fletcher Dunn
+      - Ian Parbery
+    links:
+      Book: https://gamemath.com/book
+
+  - title: The Modern JavaScript Tutorial
+    year: 2017
+    authors:
+      - Ilya Kantor
+    links:
+      Book: https://javascript.info
+
+  - title: Linear Algebra
+    year: 2010
+    authors:
+      - Gilbert Strang
+    links:
+      Webpage: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010
+
+  - title: Tiny Renderer
+    year: 2016
+    authors:
+      - Dmitry V. Sokolov
+    links:
+      Book: https://haqr.eu/tinyrenderer
+      Project: https://github.com/ssloy/tinyrenderer
+
+  - title: Computer Graphics
+    year: 2021
+    authors:
+      - Keenan Crane
+    links:
+      Webpage: https://15462.courses.cs.cmu.edu/fall2021
+
+  - title: Analytic Fog Rendering with Volumetric Primitives
+    year: 2025
+    authors:
+      - matejlou
+    links:
+      Article: https://matejlou.blog/2025/02/11/analytic-fog-rendering-with-volumetric-primitives
+
+  - title: Surfel-Based Global Illumination on the Web
+    year: 2026
+    authors:
+      - Jure Triglav
+    links:
+      Article: https://juretriglav.si/surfel-based-global-illumination-on-the-web
+
+  - title: GPU Hardware Database
+    year: 2016
+    authors:
+      - Sascha Willems
+    links:
+      Webpage: https://gpuinfo.org
+
+  - title: Ocean Rendering I
+    year: 2025
+    authors:
+      - Robert Ryan
+    links:
+      Article: https://rtryan98.github.io/2025/10/04/ocean-rendering-part-1
+
+  - title: Ocean Rendering II
+    year: 2026
+    authors:
+      - Robert Ryan
+    links:
+      Article: https://rtryan98.github.io/2026/03/22/ocean-rendering-part-2
+
+  - title: Vulkan Documentation
+    year: 0
+    authors:
+      - Khronos Group
+    links:
+      Spec: https://docs.vulkan.org/spec/latest
+      GLSL Spec: https://docs.vulkan.org/glsl/latest
+      Tutorial: https://docs.vulkan.org/tutorial/latest
+      Guide: https://docs.vulkan.org/guide/latest
+      Samples: https://docs.vulkan.org/samples/latest
+
+  - title: Introduction to Spherical Harmonics
+    year: 2026
+    authors:
+      - nicebyte
+    links:
+      Article: https://gpfault.net/posts/sph.html
+
+  - title: Learn to Use Email with Git
+    year: 2017
+    authors:
+      - Drew DeVault
+    links:
+      Tutorial: https://git-send-email.io
+
+  - title: Unix Threads in C
+    year: 2020
+    authors:
+      - CodeVault
+    links:
+      Playlist: https://youtube.com/playlist?list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2
+
+  - title: Tour of WGSL
+    year: 2023
+    authors:
+      - Google
+    links:
+      Tour: https://google.github.io/tour-of-wgsl
+
+  - title: Rendering
+    year: 2020
+    authors:
+      - Adam Celarek
+      - Bernhard Kerbl
+    links:
+      Webpage: https://cg.tuwien.ac.at/courses/Rendering/VU.SS2020.html
+      Playlist: https://youtube.com/playlist?list=PLmIqTlJ6KsE3e8SQowQ-DjD1eZkBA_Xb9
+
+  - title: Compute Gaussian Blur
+    year: 2022
+    authors:
+      - Lisitsa Nikita
+    links:
+      Article: https://lisyarus.github.io/blog/posts/compute-blur
+
+  - title: Ultra-Fast Screen-Space Refractions and Caustics via Newton’s Method
+    year: 2026
+    authors:
+      - Chase Mayer
+      - Ulf Assarsson
+      - Erik Sintorn
+    links:
+      Webpage: https://jcgt.org/published/0015/01/03
+
+  - title: Separability, SVD and Low-Rank Approximation of 2D Image Processing Filters
+    year: 2020
+    authors:
+      - Bart Wronski
+    links:
+      Article: https://bartwronski.com/2020/02/03/separate-your-filters-svd-and-low-rank-approximation-of-image-filters
+
+  - title: But What is 'a Lifetime
+    year: 2023
+    authors:
+      - Leddoo
+    links:
+      Video: https://youtu.be/gRAVZv7V91Q
+
+  - title: A Primer on Bézier Curves
+    year: 2011
+    authors:
+      - Pomax
+    links:
+      Book: https://pomax.github.io/bezierinfo
+
+  - title: CuRast
+    year: 2026
+    authors:
+      - Markus Schütz
+    links:
+      Project: https://github.com/m-schuetz/CuRast
+
+  - title: Kohi Game Engine Series
+    year: 2021
+    authors:
+      - Travis Vroman
+    links:
+      Playlist: https://youtube.com/playlist?list=PLv8Ddw9K0JPg1BEO-RS-0MYs423cvLVtj
+      Project: https://github.com/travisvroman/kohi
+
+  - title: Performance Ninja
+    year: 2021
+    authors:
+      - Denis Bakhvalov
+    links:
+      Course: https://github.com/dendibakh/perf-ninja
+      Playlist: https://www.youtube.com/playlist?list=PLRWO2AL1QAV6bJAU2kgB4xfodGID43Y5d
+
+  - title: Immersive Linear Algebra
+    year: 2015
+    authors:
+      - J. Ström
+      - K. Åström
+      - T. Akenine-Möller
+    links:
+      Book: https://immersivemath.com
