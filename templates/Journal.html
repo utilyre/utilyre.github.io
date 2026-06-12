@@ -1,7 +1,7 @@
-<article>
+<article class="border-l ml-2 pl-4 space-y-8">
   <header>
     <h2>Journal</h2>
-    <p>
+    <p class="text-sm text-neutral-300">
       A curated log of scholarly media I have digested, am currently processing,
       or intend to examine.
     </p>
@@ -16,7 +16,7 @@
 
 {{ define "JournalSection" }}
 <section>
-  <h3>
+  <h3 class="text-xl font-bold">
     {{ with .Year }}
       <time datetime="{{ . }}">{{ . }}</time>
     {{ else }}
@@ -24,9 +24,11 @@
     {{ end }}
   </h3>
 
-  {{ range .Entries }}
-    {{ template "JournalEntry" . }}
-  {{ end }}
+  <div class="space-y-4">
+    {{ range .Entries }}
+      {{ template "JournalEntry" . }}
+    {{ end }}
+  </div>
 </section>
 {{ end }}
 
@@ -36,15 +38,23 @@
 <article>
   <h4>{{ .Title }}</h4>
 
-  <ul>
+  <ul class="flex flex-wrap gap-x-1.5">
     {{ range .Authors }}
-      <li>{{ . }}</li>
+      <li class="after:content-[','] last:after:content-none text-sm text-neutral-300">{{ . }}</li>
     {{ end }}
   </ul>
 
-  <ul>
+  <ul class="flex flex-wrap gap-2 pt-1">
     {{ range $label, $url := .Links }}
-      <li><a href="{{ $url }}">{{ $label }}</a></li>
+      <li>
+        <a
+          href="{{ $url }}"
+          target="_blank"
+          class="bg-violet-800 text-violet-100 p-1 text-xs font-bold uppercase"
+        >
+          {{ $label }}
+        </a>
+      </li>
     {{ end }}
   </ul>
 </article>
