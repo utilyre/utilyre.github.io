@@ -1,0 +1,51 @@
+<article>
+  <header>
+    <h2>Journal</h2>
+    <p>
+      A curated log of scholarly media I have digested, am currently processing,
+      or intend to examine.
+    </p>
+  </header>
+
+  {{ range . }}
+    {{ template "JournalSection" . }}
+  {{ end }}
+</article>
+
+<!-- -->
+
+{{ define "JournalSection" }}
+<section>
+  <h3>
+    {{ with .Year }}
+      <time datetime="{{ . }}">{{ . }}</time>
+    {{ else }}
+      n.d.
+    {{ end }}
+  </h3>
+
+  {{ range .Entries }}
+    {{ template "JournalEntry" . }}
+  {{ end }}
+</section>
+{{ end }}
+
+<!-- -->
+
+{{ define "JournalEntry" }}
+<article>
+  <h4>{{ .Title }}</h4>
+
+  <ul>
+    {{ range .Authors }}
+      <li>{{ . }}</li>
+    {{ end }}
+  </ul>
+
+  <ul>
+    {{ range $label, $url := .Links }}
+      <li><a href="{{ $url }}">{{ $label }}</a></li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

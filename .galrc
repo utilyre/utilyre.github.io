@@ -1,1 +1,2 @@
-go run . > ./public/journal.html
+go run . | tee ./public/index.html
+---

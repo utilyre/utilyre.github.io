@@ -8,18 +8,38 @@
     <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
     <!-- <link rel="stylesheet" href="/index.css" /> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       html {
         color-scheme: dark;
         @apply font-serif;
       }
-    </style>
+    </style> -->
 
-    <title>Amirabbas Fazelinia</title>
+    <title>Webpage | Amirabbas Fazelinia</title>
+    <meta name="description" content="Undergraduate Student at Bu-Ali Sina University">
+    <meta name="author" content="Amirabbas Fazelinia">
   </head>
 
   <body>
-    {{ . }}
+    <header>
+      <h1>Amirabbas Fazelinia</h1>
+      <p>Undergraduate Student at Bu-Ali Sina University</p>
+
+      <ul>
+        <li>utilyre &lt;at&gt; gmail &lt;dot&gt; com</li>
+        <li><a href="https://linkedin.com/in/amirabbas-fazelinia">in/amirabbas-fazelinia</a></li>
+        <li><a href="https://bsky.app/profile/utilyre.github.io">@utilyre.github.io</a></li>
+        <li><a href="https://github.com/utilyre">@utilyre</a></li>
+      </ul>
+    </header>
+
+    <main>
+      {{ . }}
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2026 Amirabbas Fazelinia</p>
+    </footer>
   </body>
 </html>
