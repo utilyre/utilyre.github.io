@@ -9,13 +9,13 @@ jobs:
     name: Generate
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
       - name: Set up Golang
         uses: actions/setup-go@v6
         with:
-          go-version-file: go.mod
-
-      - name: Check out repository
-        uses: actions/checkout@v6
+          go-version-file: ./go.mod
 
       - name: Generate static files
         run: go run . > ./public/index.html
