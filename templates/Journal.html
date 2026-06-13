@@ -1,4 +1,4 @@
-<article class="border-l ml-2 pl-4 space-y-8">
+<article class="border-l ml-2 pl-4">
   <header>
     <h2>Journal</h2>
     <p class="text-sm text-neutral-300">
@@ -7,7 +7,9 @@
     </p>
   </header>
 
-  <div class="space-y-16">
+  <div class="h-8"></div>
+
+  <div class="flex flex-col gap-16">
     {{ range . }}
       {{ template "JournalSection" . }}
     {{ end }}
@@ -26,7 +28,7 @@
     {{ end }}
   </h3>
 
-  <div class="space-y-4">
+  <div class="flex flex-col gap-4">
     {{ range .Entries }}
       {{ template "JournalEntry" . }}
     {{ end }}
