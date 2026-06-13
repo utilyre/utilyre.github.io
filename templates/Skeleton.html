@@ -1,3 +1,4 @@
+{{ define "Skeleton" }}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
-    <link rel="stylesheet" href="/tw.css" />
     {{ with .Style }}
-      {{ . }}
-    {{ else }}
-    <style type="text/tailwindcss">
-      @theme {
+      <style>
+        {{ . }}
+      </style>
+    {{ end }}
+    <style>
+      html {
         color-scheme: dark;
       }
     </style>
 
-    {{ end }}
-
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
     <title>Home | Amirabbas Fazelinia</title>
   </head>
 
@@ -32,15 +32,15 @@
 
     <header class="px-8">
       <h1 class="text-center font-bold text-lg">Amirabbas Fazelinia</h1>
-      <p class="italic text-center text-neutral-300">I edit plain text and move bits around for a living.</p>
+      <p class="italic text-center text-neutral-300">
+        I edit plain text and move bits around for a living.
+      </p>
     </header>
 
     <div class="h-4"></div>
 
     <nav class="flex flex-col items-center">
-      <ul
-        class=""
-      >
+      <ul>
         <li class="font-mono text-sm">
           utilyre
           <span class="text-neutral-300">&lt;at&gt;</span>
@@ -86,7 +86,7 @@
       </main>
 
       <aside>
-        {{ . }}
+        {{ template "Journal" .Journal }}
       </aside>
     </div>
 
@@ -97,3 +97,4 @@
     </footer>
   </body>
 </html>
+{{ end }}

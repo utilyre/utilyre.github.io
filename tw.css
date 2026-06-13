@@ -1,6 +1,0 @@
-@import "tailwindcss" source(none);
-@source "./public/index.html";
-
-html {
-  color-scheme: dark;
-}

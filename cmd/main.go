@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"website/internal/ingestion"
@@ -19,14 +18,10 @@ func main() {
 		log.Fatalln("ingest:", err)
 	}
 
-	fmt.Println(len(content.Journal))
-
 	out, err := os.Create("./public/index.html")
 	if err != nil {
 		log.Fatalln("create:", err)
 	}
-
-	fmt.Println(out)
 
 	err = rendering.RenderContent(out, content)
 	if err != nil {

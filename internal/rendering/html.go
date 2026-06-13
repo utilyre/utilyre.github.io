@@ -3,24 +3,27 @@ package rendering
 import (
 	"bytes"
 	"cmp"
+	"fmt"
+	"html/template"
 	"io"
+	"os"
 	"os/exec"
 	"slices"
-	"text/template"
-	textemplate "text/template"
+	"strings"
 	"website/internal/domain"
 )
 
 type contentView struct {
+	Style   template.CSS
 	Journal []journalSectionView
 }
 
 type journalSectionView struct {
-	Year    uint
-	Entries []journalEntryView
+	Year uint
+	Logs []journalLogView
 }
 
-type journalEntryView struct {
+type journalLogView struct {
 	Title   string
 	Authors []string
 	Links   []domain.LabeledLink
@@ -36,30 +39,54 @@ func RenderContent(w io.Writer, content domain.Content) error {
 		}
 	} */
 
-	Skeleton, err := textemplate.ParseFiles("./templates/Skeleton.html")
+	tmpl := template.Must(template.ParseGlob("./templates/*.html"))
+
+	// first pass: render to a temporary file without style
+	tmp, err := os.CreateTemp("", "*.html")
+	if err != nil {
+		return err
+	}
+	err = tmpl.ExecuteTemplate(tmp, "Skeleton", &view)
 	if err != nil {
 		return err
 	}
 
-	Journal, err := template.ParseFiles("./templates/Journal.html")
+	// generate css styles using tailwind based on the first pass
+	var style bytes.Buffer
+	twCMD := exec.Command("tailwindcss", "-m", "-i", "-", "-o", "-")
+	twCMD.Stdin = strings.NewReader(fmt.Sprintf(
+		`@import "tailwindcss" source(none); @source "%s";`,
+		tmp.Name(),
+	))
+	twCMD.Stdout = &style
+	err = twCMD.Run()
 	if err != nil {
 		return err
 	}
 
-	var buf bytes.Buffer
-	err = Journal.Execute(&buf, view.Journal)
+	// clean up the temporary file
+	tmpName := tmp.Name()
+	err = tmp.Close()
+	if err != nil {
+		return err
+	}
+	err = os.Remove(tmpName)
 	if err != nil {
 		return err
 	}
 
-	err = Skeleton.Execute(w, buf.String())
+	// second pass: render to the actual writer given as parameter
+	var html bytes.Buffer
+	view.Style = template.CSS(style.String())
+	err = tmpl.ExecuteTemplate(&html, "Skeleton", &view)
 	if err != nil {
 		return err
 	}
 
-	cmd := exec.Command("tailwindcss", "-i", "./tw.css", "-o", "-")
-	cmd.Stdout = something
-	err = cmd.Run()
+	minCMD := exec.Command("minhtml", "--minify-css")
+	minCMD.Stdin = &html
+	minCMD.Stdout = w
+	err = minCMD.Run()
 	if err != nil {
 		return err
 	}
@@ -76,8 +103,8 @@ func transform(content domain.Content) contentView {
 	)
 
 	// domain to view
-	d2v := func(log domain.JournalLog) journalEntryView {
-		return journalEntryView{
+	d2v := func(log domain.JournalLog) journalLogView {
+		return journalLogView{
 			Title:   log.Title,
 			Authors: log.Authors,
 			Links:   log.Links,
@@ -86,18 +113,18 @@ func transform(content domain.Content) contentView {
 
 	if len(sortedJournal) > 0 {
 		curr := journalSectionView{
-			Year:    sortedJournal[0].Year,
-			Entries: []journalEntryView{d2v(sortedJournal[0])},
+			Year: sortedJournal[0].Year,
+			Logs: []journalLogView{d2v(sortedJournal[0])},
 		}
 
 		for _, entry := range sortedJournal[1:] {
 			if entry.Year == curr.Year {
-				curr.Entries = append(curr.Entries, d2v(entry))
+				curr.Logs = append(curr.Logs, d2v(entry))
 				continue
 			}
 
 			// sort
-			slices.SortFunc(curr.Entries, func(a, b journalEntryView) int {
+			slices.SortFunc(curr.Logs, func(a, b journalLogView) int {
 				return cmp.Compare(a.Title, b.Title)
 			})
 
@@ -106,7 +133,7 @@ func transform(content domain.Content) contentView {
 
 			// reset
 			curr.Year = entry.Year
-			curr.Entries = []journalEntryView{d2v(entry)}
+			curr.Logs = []journalLogView{d2v(entry)}
 		}
 
 		view.Journal = append(view.Journal, curr)
