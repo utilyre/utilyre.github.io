@@ -25,10 +25,9 @@ jobs:
           curl -vLo ./bin/minhtml https://github.com/wilsonzlin/minify-html/releases/download/v0.18.1/minhtml-0.18.1-x86_64-unknown-linux-gnu
 
           chmod -v +x ./bin/tailwindcss ./bin/minhtml
-          echo ./bin >> "$GITHUB_PATH"
 
       - name: Generate static files
-        run: go run ./cmd
+        run: env PATH="./bin/:$PATH" go run ./cmd
 
       - name: Upload static files as artifacts
         uses: actions/upload-pages-artifact@v5
