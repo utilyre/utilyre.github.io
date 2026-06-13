@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"html/template"
 	"io"
+	"log"
 	"os"
 	"os/exec"
 	"slices"
@@ -31,6 +32,7 @@ type journalLogView struct {
 
 func RenderContent(w io.Writer, content domain.Content) error {
 	view := transform(content)
+	log.Println("transformed content into view data")
 
 	/* for _, section := range view.Journal {
 		fmt.Println(section.Year)
@@ -40,16 +42,19 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	} */
 
 	tmpl := template.Must(template.ParseGlob("./templates/*.html"))
+	log.Println("parsed templates")
 
 	// first pass: render to a temporary file without style
 	tmp, err := os.CreateTemp("", "*.html")
 	if err != nil {
 		return err
 	}
+	log.Println("created temporary html file for the first pass")
 	err = tmpl.ExecuteTemplate(tmp, "Skeleton", &view)
 	if err != nil {
 		return err
 	}
+	log.Println("executed the first pass")
 
 	// generate css styles using tailwind based on the first pass
 	var style bytes.Buffer
@@ -63,6 +68,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	if err != nil {
 		return err
 	}
+	log.Println("ran tailwind css")
 
 	// clean up the temporary file
 	tmpName := tmp.Name()
@@ -74,6 +80,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	if err != nil {
 		return err
 	}
+	log.Println("cleaned up temporary html file")
 
 	// second pass: render to the actual writer given as parameter
 	var html bytes.Buffer
@@ -82,6 +89,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	if err != nil {
 		return err
 	}
+	log.Println("executed the second pass")
 
 	minCMD := exec.Command("minhtml", "--minify-css")
 	minCMD.Stdin = &html
@@ -90,6 +98,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	if err != nil {
 		return err
 	}
+	log.Println("minified the result")
 
 	return nil
 }
