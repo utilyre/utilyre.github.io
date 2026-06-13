@@ -45,7 +45,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 	log.Println("parsed templates")
 
 	// first pass: render to a temporary file without style
-	tmp, err := os.CreateTemp("", "*.html")
+	tmp, err := os.CreateTemp(".", "*.html")
 	if err != nil {
 		return err
 	}
