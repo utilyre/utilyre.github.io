@@ -27,7 +27,7 @@ jobs:
           chmod -v +x ./bin/tailwindcss ./bin/minhtml
 
       - name: Generate static files
-        run: env PATH="./bin/:$PATH" go run ./cmd
+        run: env PATH="$PWD/bin/:$PATH" go run ./cmd
 
       - name: Upload static files as artifacts
         uses: actions/upload-pages-artifact@v5
