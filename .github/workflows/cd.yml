@@ -17,8 +17,14 @@ jobs:
         with:
           go-version-file: ./go.mod
 
+      - name: Set up post processors
+        run: |
+          curl -Lo tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/download/v4.3.1/tailwindcss-linux-x64
+          curl -Lo minhtml https://github.com/wilsonzlin/minify-html/releases/download/v0.18.1/minhtml-0.18.1-x86_64-unknown-linux-gnu
+          chmod +x tailwindcss minhtml
+
       - name: Generate static files
-        run: go run . > ./public/index.html
+        run: go run ./cmd
 
       - name: Upload static files as artifacts
         uses: actions/upload-pages-artifact@v5
