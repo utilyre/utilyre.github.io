@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico" /> -->
-    <!-- <link rel="stylesheet" href="/index.css" /> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/tw.css" />
+    {{ with .Style }}
+      {{ . }}
+    {{ else }}
     <style type="text/tailwindcss">
-      html {
+      @theme {
         color-scheme: dark;
       }
     </style>
+
+    {{ end }}
 
     <title>Home | Amirabbas Fazelinia</title>
   </head>

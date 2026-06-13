@@ -78,14 +78,12 @@ journal:
       article: https://easings.net
 
   - title: 2D Distance Functions
-    year: 0
     authors:
       - Inigo Quilez
     links:
       article: https://iquilezles.org/articles/distfunctions2d
 
   - title: 3D Distance Functions
-    year: 0
     authors:
       - Inigo Quilez
     links:
@@ -151,7 +149,6 @@ journal:
       course: https://learnlatex.org
 
   - title: Learn LaTeX in 30 Minutes
-    year: 0
     authors:
       - Overleaf
     links:
@@ -265,7 +262,6 @@ journal:
       article: https://rtryan98.github.io/2026/03/22/ocean-rendering-part-2
 
   - title: Vulkan Documentation
-    year: 0
     authors:
       - Khronos Group
     links:

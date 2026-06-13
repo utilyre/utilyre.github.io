@@ -1,2 +1,4 @@
-go run . | tee ./public/index.html
+set -ex
+
+go run ./cmd
 ---

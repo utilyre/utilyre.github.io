@@ -10,7 +10,6 @@ import (
 	"os"
 	"slices"
 	"strings"
-	textemplate "text/template"
 
 	"github.com/goccy/go-yaml"
 )
@@ -35,32 +34,27 @@ func main() {
 		}
 	} */
 
-	Skeleton, err := textemplate.ParseFiles("./templates/Skeleton.html")
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	Journal, err := template.ParseFiles("./templates/Journal.html")
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	var buf bytes.Buffer
-	err = Journal.Execute(&buf, journal)
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	err = Skeleton.Execute(os.Stdout, buf.String())
-	if err != nil {
-		log.Fatalln(err)
-	}
 }
 
-func groupJournal(journal []JournalEntry) []JournalSection {
+type RenderData struct {
+	Journal []JournalSection
+}
+
+type JournalSection struct {
+	Year    uint
+	Entries []JournalEntry
+}
+
+type JournalEntry struct{
+	Title string
+	Authors []string
+	Links map[string]string
+}
+
+func cookContent(content Content) RenderData {
 	j := slices.SortedFunc(
-		slices.Values(journal),
-		func(a, b JournalEntry) int { return cmp.Compare(b.Year, a.Year) },
+		slices.Values(content.Journal),
+		func(a, b Material) int { return cmp.Compare(b.Year, a.Year) },
 	)
 
 	var sections []JournalSection
@@ -96,20 +90,16 @@ func groupJournal(journal []JournalEntry) []JournalSection {
 }
 
 type Content struct {
-	Journal []JournalEntry
+	Journal []Material
 }
 
-type JournalSection struct {
-	Year    uint
-	Entries []JournalEntry
-}
-
-type JournalEntry struct {
+type Material struct {
 	Title   string
 	Year    uint
 	Authors []string
 	Links   map[string]string
 }
+
 
 func readContent() (Content, error) {
 	f, err := os.Open("./content.yml")

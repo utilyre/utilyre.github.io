@@ -49,14 +49,14 @@
   </ul>
 
   <ul class="flex flex-wrap gap-2 pt-1">
-    {{ range $label, $url := .Links }}
+    {{ range .Links }}
       <li>
         <a
-          href="{{ $url }}"
+          href="{{ .URL }}"
           target="_blank"
           class="bg-violet-800 text-violet-100 p-1 text-xs font-bold uppercase"
         >
-          {{ $label }}
+          {{ .Label }}
         </a>
       </li>
     {{ end }}
