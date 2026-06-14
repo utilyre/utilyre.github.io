@@ -376,3 +376,10 @@ journal:
       - T. Akenine-Möller
     links:
       book: https://immersivemath.com
+
+  - title: The Graphics Codex
+    year: 2024
+    authors:
+      - Morgan McGuire
+    links:
+      book: https://graphicscodex.com
