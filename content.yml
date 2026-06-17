@@ -383,3 +383,10 @@ journal:
       - Morgan McGuire
     links:
       book: https://graphicscodex.com
+
+  - title: A Scalable and Production-Ready Sky and Atmosphere Rendering Technique
+    year: 2020
+    authors:
+      - Sébastien Hillaire
+    links:
+      paper: https://diglib.eg.org/items/8a3e5350-18b3-46bd-9274-3add5af88c75
