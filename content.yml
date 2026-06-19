@@ -11,7 +11,7 @@ journal:
     authors:
       - Cem Yuksel
     links:
-      webpage: https://graphics.cs.utah.edu/courses/cs4600/fall2021
+      course: https://graphics.cs.utah.edu/courses/cs4600/fall2021
       playlist: https://youtu.be/playlist?list=PLplnkTzzqsZTfYh4UbhLGpI5kGd5oW_Hh
 
   - title: Ray Tracing in One Weekend
@@ -35,8 +35,8 @@ journal:
       - Pawel Kozlowski
       - Giovanni De Francesco
     links:
-      webpage: https://intro-to-restir.cwyman.org
-      download: https://dl.acm.org/doi/10.1145/3587423.3595511
+      course: https://intro-to-restir.cwyman.org
+      doi: https://dl.acm.org/doi/10.1145/3587423.3595511
 
   - title: GPU Gems
     year: 2004
@@ -117,6 +117,7 @@ journal:
       - Joey de Vries
     links:
       book: https://learnopengl.com
+      pdf: https://learnopengl.com/book/book_pdf.pdf
 
   - title: The Book of Shaders
     year: 2015
@@ -138,7 +139,7 @@ journal:
     authors:
       - Thibault Coppex
     links:
-      article: https://gist.github.com/tcoppex/443d1dd45f873d96260195d6431b0989
+      tutorial: https://gist.github.com/tcoppex/443d1dd45f873d96260195d6431b0989
 
   - title: Learn LaTeX
     year: 2020
@@ -147,12 +148,6 @@ journal:
       - Joseph Wright
     links:
       course: https://learnlatex.org
-
-  - title: Learn LaTeX in 30 Minutes
-    authors:
-      - Overleaf
-    links:
-      article: https://overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
 
   - title: Getting Started with TeX, LaTeX, and Friends
     year: 2025
@@ -209,14 +204,14 @@ journal:
     authors:
       - Gilbert Strang
     links:
-      webpage: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010
+      course: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010
 
   - title: Tiny Renderer
     year: 2016
     authors:
       - Dmitry V. Sokolov
     links:
-      book: https://haqr.eu/tinyrenderer
+      tutorial: https://haqr.eu/tinyrenderer
       project: https://github.com/ssloy/tinyrenderer
 
   - title: Computer Graphics
@@ -224,7 +219,8 @@ journal:
     authors:
       - Keenan Crane
     links:
-      webpage: https://15462.courses.cs.cmu.edu/fall2021
+      course: https://15462.courses.cs.cmu.edu/fall2021
+      playlist: https://youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E
 
   - title: Analytic Fog Rendering with Volumetric Primitives
     year: 2025
@@ -261,16 +257,6 @@ journal:
     links:
       article: https://rtryan98.github.io/2026/03/22/ocean-rendering-part-2
 
-  - title: Vulkan Documentation
-    authors:
-      - Khronos Group
-    links:
-      spec: https://docs.vulkan.org/spec/latest
-      glsl spec: https://docs.vulkan.org/glsl/latest
-      tutorial: https://docs.vulkan.org/tutorial/latest
-      guide: https://docs.vulkan.org/guide/latest
-      samples: https://docs.vulkan.org/samples/latest
-
   - title: Introduction to Spherical Harmonics
     year: 2026
     authors:
@@ -297,7 +283,7 @@ journal:
     authors:
       - Google
     links:
-      tour: https://google.github.io/tour-of-wgsl
+      tutorial: https://google.github.io/tour-of-wgsl
 
   - title: Rendering
     year: 2020
@@ -305,7 +291,7 @@ journal:
       - Adam Celarek
       - Bernhard Kerbl
     links:
-      webpage: https://cg.tuwien.ac.at/courses/Rendering/VU.SS2020.html
+      course: https://cg.tuwien.ac.at/courses/Rendering/VU.SS2020.html
       playlist: https://youtube.com/playlist?list=PLmIqTlJ6KsE3e8SQowQ-DjD1eZkBA_Xb9
 
   - title: Compute Gaussian Blur
@@ -322,7 +308,8 @@ journal:
       - Ulf Assarsson
       - Erik Sintorn
     links:
-      webpage: https://jcgt.org/published/0015/01/03
+      paper: https://jcgt.org/published/0015/01/03
+      pdf: https://jcgt.org/published/0015/01/03/paper.pdf
 
   - title: Separability, SVD and Low-Rank Approximation of 2D Image Processing Filters
     year: 2020
@@ -390,3 +377,4 @@ journal:
       - Sébastien Hillaire
     links:
       paper: https://diglib.eg.org/items/8a3e5350-18b3-46bd-9274-3add5af88c75
+      pdf: https://diglib.eg.org/bitstreams/f17c98cb-60c8-4a58-b459-181dd009ef4e/download
