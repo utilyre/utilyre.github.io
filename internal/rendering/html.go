@@ -11,12 +11,14 @@ import (
 	"os/exec"
 	"slices"
 	"strings"
+	"time"
 	"website/internal/domain"
 )
 
 type contentView struct {
-	Style   template.CSS
-	Journal []journalSectionView
+	Style    template.CSS
+	Journal  []journalSectionView
+	CopyYear uint
 }
 
 type journalSectionView struct {
@@ -105,6 +107,7 @@ func RenderContent(w io.Writer, content domain.Content) error {
 
 func transform(content domain.Content) contentView {
 	var view contentView
+	view.CopyYear = uint(time.Now().Year())
 
 	sortedJournal := slices.SortedFunc(
 		slices.Values(content.Journal),

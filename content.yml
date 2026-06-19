@@ -59,7 +59,7 @@ journal:
     links:
       book: https://developer.nvidia.com/gpugems/gpugems3
 
-  - title: Physically Based Rendering Ed4
+  - title: Physically Based Rendering, 4th Edition
     year: 2023
     authors:
       - Matt Pharr
