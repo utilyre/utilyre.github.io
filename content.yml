@@ -36,7 +36,7 @@ journal:
       - Giovanni De Francesco
     links:
       course: https://intro-to-restir.cwyman.org
-      doi: https://dl.acm.org/doi/10.1145/3587423.3595511
+      acm: https://dl.acm.org/doi/10.1145/3587423.3595511
 
   - title: GPU Gems
     year: 2004
@@ -170,7 +170,7 @@ journal:
     links:
       tutorial: https://github.com/jamesroutley/write-a-hash-table
 
-  - title: Figuring out round, floor, and ceil with Integer Division
+  - title: Figuring Out Round, Floor, and Ceil with Integer Division
     year: 2022
     authors:
       - Clément Bœsch
@@ -378,3 +378,132 @@ journal:
     links:
       paper: https://diglib.eg.org/items/8a3e5350-18b3-46bd-9274-3add5af88c75
       pdf: https://diglib.eg.org/bitstreams/f17c98cb-60c8-4a58-b459-181dd009ef4e/download
+
+  - title: The Rendering Equation
+    year: 1986
+    authors:
+      - James T. Kajiya
+    links:
+      paper: https://dl.acm.org/doi/10.1145/15886.15902
+      pdf: https://dl.acm.org/doi/pdf/10.1145/15886.15902?download=true
+
+  - title: Metropolis Light Transport
+    year: 1997
+    authors:
+      - Eric Veach
+      - Leonidas J. Guibas
+    links:
+      paper: https://graphics.stanford.edu/papers/metro
+      pdf: http://graphics.stanford.edu/papers/metro/metro.pdf
+
+  - title: N1256
+    year: 2007
+    authors:
+      - WG14
+    links:
+      std: https://open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf
+
+  - title: Debugging with GDB, 10th Edition
+    year: 2011
+    authors:
+      - Richard Stallman
+      - Roland Pesch
+      - Stan Shebs
+    links:
+
+  - title: Game Engine Architecture, 2nd Edition
+    year: 2015
+    authors:
+      - Jason Gregory
+    links:
+      webpage: https://gameenginebook.com
+
+  - title: Fundamentals of Computer Graphics, 4th Edition
+    year: 2016
+    authors:
+      - Steve Marschner
+      - Peter Shirley
+    links:
+      acm: https://dl.acm.org/doi/10.5555/2872329
+      amazon: https://amazon.com/exec/obidos/ASIN/1482229390/acmorg-20
+
+  - title: Grokking Algorithms, 1st Edition
+    year: 2016
+    authors:
+      - Aditya Y. Bhargava
+    links:
+      manning: https://manning.com/books/grokking-algorithms
+
+  - title: Introduction to Linear Algebra, 5th Edition
+    year: 2016
+    authors:
+      - Gilbert Strang
+    links:
+      webpage: https://math.mit.edu/~gs/linearalgebra/ila5/indexila5
+
+  - title: Operating System Concepts, 10th Edition
+    year: 2018
+    authors:
+      - Abraham Silberschatz
+      - Peter Baer Galvin
+      - Greg Gagne
+    links:
+      webpage: https://os-book.com/OS10
+
+  - title: Real-Time Rendering, 4th Edition
+    year: 2018
+    authors:
+      - Tomas Akenine-Moller
+      - Eric Haines
+      - Naty Hoffman
+      - Angelo Pesce
+      - Michal Iwanicki
+      - Sebastien Hillaire
+    links:
+      resources: https://realtimerendering.com
+
+  - title: Refactoring UI
+    year: 2018
+    authors:
+      - Adam Wathan
+      - Steve Schoger
+    links:
+      webpage: https://refactoringui.com
+
+  - title: The Fourier Transform and Its Applications
+    year: 2019
+    authors:
+      - Brad Osgood
+    links:
+      playlist: https://youtube.com/playlist?list=PLB24BC7956EE040CD
+      pdf: https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf
+
+  - title: Introduction to Algorithms, 4th Edition
+    year: 2022
+    authors:
+      - Thomas H. Cormen
+      - Charles E. Leiserson
+      - Ronald L. Rivest
+      - Clifford Stein
+    links:
+      mitpress: https://mitpress.mit.edu/9780262046305/introduction-to-algorithms
+
+  - title: AMD64 API 1.0
+    year: 2025
+    authors:
+      - H.J. Lu
+      - Michael Matz
+      - Milind Girkar
+      - Jan Hubicka
+      - Andreas Jaeger
+      - Mark Mitschell
+    links:
+      pdf: https://www.owalle.com/2021/12/30/function-calling-sequence/abi.pdf
+
+  - title: Beej's Guide to Network Programming, 3rd Edition
+    year: 2025
+    authors:
+      - Brian "Beej Jorgensen" Hall
+    links:
+      webpage: https://beej.us/guide/bgnet
+      pdf: https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf
