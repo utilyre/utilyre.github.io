@@ -18,10 +18,10 @@ journal:
     year: 2025
     authors:
       - Peter Shirley
-      - Trevor D. Black
+      - Trevor David Black
       - Steve Hollasch
     links:
-      webpage: https://raytracing.github.io
+      series: https://raytracing.github.io
 
   - title: A Gentle Introduction to ReSTIR
     year: 2023
