@@ -488,7 +488,7 @@ journal:
     links:
       mitpress: https://mitpress.mit.edu/9780262046305/introduction-to-algorithms
 
-  - title: AMD64 API 1.0
+  - title: AMD64 ABI 1.0
     year: 2025
     authors:
       - H.J. Lu
