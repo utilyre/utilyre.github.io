@@ -21,7 +21,7 @@ journal:
       - Trevor David Black
       - Steve Hollasch
     links:
-      series: https://raytracing.github.io
+      books: https://raytracing.github.io
 
   - title: A Gentle Introduction to ReSTIR
     year: 2023
@@ -36,7 +36,6 @@ journal:
       - Giovanni De Francesco
     links:
       course: https://intro-to-restir.cwyman.org
-      acm: https://dl.acm.org/doi/10.1145/3587423.3595511
 
   - title: GPU Gems
     year: 2004
@@ -141,21 +140,6 @@ journal:
     links:
       tutorial: https://gist.github.com/tcoppex/443d1dd45f873d96260195d6431b0989
 
-  - title: Learn LaTeX
-    year: 2020
-    authors:
-      - David Carlisle
-      - Joseph Wright
-    links:
-      course: https://learnlatex.org
-
-  - title: Getting Started with TeX, LaTeX, and Friends
-    year: 2025
-    authors:
-      - The TeX Users Group
-    links:
-      webpage: https://tug.org/begin
-
   - title: The Lost Art of Structure Packing
     year: 2018
     authors:
@@ -190,6 +174,7 @@ journal:
       - Fletcher Dunn
       - Ian Parbery
     links:
+      webpage: https://gamemath.com
       book: https://gamemath.com/book
 
   - title: The Modern JavaScript Tutorial
@@ -242,6 +227,8 @@ journal:
       - Sascha Willems
     links:
       webpage: https://gpuinfo.org
+      opengl: https://opengl.gpuinfo.org
+      vulkan: https://vulkan.gpuinfo.org
 
   - title: Ocean Rendering I
     year: 2025
@@ -263,13 +250,6 @@ journal:
       - Nicebyte
     links:
       article: https://gpfault.net/posts/sph.html
-
-  - title: Learn to Use Email with Git
-    year: 2017
-    authors:
-      - Drew DeVault
-    links:
-      tutorial: https://git-send-email.io
 
   - title: Unix Threads in C
     year: 2020
@@ -317,13 +297,6 @@ journal:
       - Bart Wronski
     links:
       article: https://bartwronski.com/2020/02/03/separate-your-filters-svd-and-low-rank-approximation-of-image-filters
-
-  - title: But What is 'a Lifetime
-    year: 2023
-    authors:
-      - Leddoo
-    links:
-      video: https://youtu.be/gRAVZv7V91Q
 
   - title: A Primer on Bézier Curves
     year: 2011
@@ -401,7 +374,7 @@ journal:
     authors:
       - WG14
     links:
-      std: https://open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf
+      pdf: https://open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf
 
   - title: Debugging with GDB, 10th Edition
     year: 2011
@@ -424,8 +397,6 @@ journal:
       - Steve Marschner
       - Peter Shirley
     links:
-      acm: https://dl.acm.org/doi/10.5555/2872329
-      amazon: https://amazon.com/exec/obidos/ASIN/1482229390/acmorg-20
 
   - title: Grokking Algorithms, 1st Edition
     year: 2016
@@ -460,7 +431,7 @@ journal:
       - Michal Iwanicki
       - Sebastien Hillaire
     links:
-      resources: https://realtimerendering.com
+      webpage: https://realtimerendering.com
 
   - title: Refactoring UI
     year: 2018
@@ -486,7 +457,6 @@ journal:
       - Ronald L. Rivest
       - Clifford Stein
     links:
-      mitpress: https://mitpress.mit.edu/9780262046305/introduction-to-algorithms
 
   - title: AMD64 ABI 1.0
     year: 2025
