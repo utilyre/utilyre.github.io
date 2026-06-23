@@ -18,7 +18,7 @@ journal:
     year: 2025
     authors:
       - Peter Shirley
-      - Trevor David Black
+      - Trevor D. Black
       - Steve Hollasch
     links:
       book: https://raytracing.github.io/books/RayTracingInOneWeekend
@@ -27,7 +27,7 @@ journal:
     year: 2025
     authors:
       - Peter Shirley
-      - Trevor David Black
+      - Trevor D. Black
       - Steve Hollasch
     links:
       book: https://raytracing.github.io/books/RayTracingTheNextWeek
@@ -36,7 +36,7 @@ journal:
     year: 2025
     authors:
       - Peter Shirley
-      - Trevor David Black
+      - Trevor D. Black
       - Steve Hollasch
     links:
       book: https://raytracing.github.io/books/RayTracingTheRestOfYourLife
@@ -130,7 +130,7 @@ journal:
   - title: Learn OpenGL
     year: 2014
     authors:
-      - Joey de Vries
+      - Joey D. Vries
     links:
       book: https://learnopengl.com
       pdf: https://learnopengl.com/book/book_pdf.pdf
@@ -174,7 +174,7 @@ journal:
   - title: Figuring Out Round, Floor, and Ceil with Integer Division
     year: 2022
     authors:
-      - Clément Bœsch
+      - Clement Boesch
     links:
       article: https://blog.pkh.me/p/36-figuring-out-round%2C-floor-and-ceil-with-integer-division.html
 
@@ -313,7 +313,7 @@ journal:
     links:
       article: https://bartwronski.com/2020/02/03/separate-your-filters-svd-and-low-rank-approximation-of-image-filters
 
-  - title: A Primer on Bézier Curves
+  - title: A Primer on Bezier Curves
     year: 2011
     authors:
       - Pomax
@@ -346,9 +346,9 @@ journal:
   - title: Immersive Linear Algebra
     year: 2015
     authors:
-      - J. Ström
-      - K. Åström
-      - T. Akenine-Möller
+      - Jacob Strom
+      - Kalle Astrom
+      - Tomas Akenine-Moller
     links:
       book: https://immersivemath.com
 
@@ -362,7 +362,7 @@ journal:
   - title: A Scalable and Production-Ready Sky and Atmosphere Rendering Technique
     year: 2020
     authors:
-      - Sébastien Hillaire
+      - Sebastien Hillaire
     links:
       paper: https://diglib.eg.org/items/8a3e5350-18b3-46bd-9274-3add5af88c75
       pdf: https://diglib.eg.org/bitstreams/f17c98cb-60c8-4a58-b459-181dd009ef4e/download
@@ -474,7 +474,7 @@ journal:
   - title: AMD64 ABI 1.0
     year: 2025
     authors:
-      - H.J. Lu
+      - Hong J. Lu
       - Michael Matz
       - Milind Girkar
       - Jan Hubicka
