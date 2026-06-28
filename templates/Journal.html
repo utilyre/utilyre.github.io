@@ -1,9 +1,9 @@
 {{ define "Journal" }}
 <article id="journal" class="border-l ml-2 pl-4">
   <header>
-    <div class="flex gap-2 items-center group">
+    <div class="flex items-center group">
       <h2>Journal</h2>
-      <a href="#journal" class="md:hidden md:group-hover:inline font-bold text-violet-300">#</a>
+      <a href="#journal" class="px-2 md:opacity-0 md:group-hover:opacity-100 md:focus:opacity-100 font-bold text-violet-300">#</a>
     </div>
     <p class="text-sm text-neutral-300">The scholarly media under my radar.</p>
   </header>
@@ -20,14 +20,14 @@
 
 {{ define "JournalSection" }}
 <section id="journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}">
-  <div class="flex gap-2 items-center group">
+  <div class="flex items-center group">
     <h3 class="text-xl font-bold">
       {{ with .Year }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}n.d.{{ end }}
     </h3>
 
     <a
       href="#journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}"
-      class="md:hidden md:group-hover:inline text-xl font-bold text-violet-300"
+      class="px-2 md:opacity-0 md:group-hover:opacity-100 md:focus:opacity-100 text-xl font-bold text-violet-300"
     >#</a>
   </div>
 
