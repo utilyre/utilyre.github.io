@@ -5,13 +5,10 @@
       <h2>Journal</h2>
       <a href="#journal" class="md:hidden md:group-hover:inline font-bold text-violet-300">#</a>
     </div>
-    <p class="text-sm text-neutral-300">
-      A curated log of scholarly media I have digested, am currently processing,
-      or intend to examine.
-    </p>
+    <p class="text-sm text-neutral-300">The scholarly media under my radar.</p>
   </header>
 
-  <div class="h-8"></div>
+  <div class="h-4"></div>
 
   <div class="flex flex-col gap-16">
     {{ range . }}
@@ -22,14 +19,17 @@
 {{ end }}
 
 {{ define "JournalSection" }}
-<section>
-  <h3 class="text-xl font-bold">
-    {{ with .Year }}
-      <time datetime="{{ . }}">{{ . }}</time>
-    {{ else }}
-      n.d.
-    {{ end }}
-  </h3>
+<section id="journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}">
+  <div class="flex gap-2 items-center group">
+    <h3 class="text-xl font-bold">
+      {{ with .Year }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}n.d.{{ end }}
+    </h3>
+
+    <a
+      href="#journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}"
+      class="md:hidden md:group-hover:inline text-xl font-bold text-violet-300"
+    >#</a>
+  </div>
 
   <div class="flex flex-col gap-4">
     {{ range .Logs }}
