@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{ with .Style }}
-      <style>
-        {{ . }}
-      </style>
-    {{ end }}
+    <title>Home | Amirabbas Fazelinia</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="stylesheet" href="/inter/inter.css" />
+
     <style>
-      html {
-        color-scheme: dark;
+      :root {
+        --default-font-family: "Inter", var(--font-sans);
+      }
+
+      @supports (font-variation-settings: normal) {
+        :root {
+          --default-font-family: "Inter var", var(--font-sans);
+        }
       }
     </style>
 
-    <link rel="icon" type="image/x-icon" href="/favicon.png" />
-    <title>Home | Amirabbas Fazelinia</title>
+    {{ with .Style }}<style>{{ . }}</style>{{ end }}
   </head>
 
-  <body class="bg-neutral-900">
+  <body class="scheme-dark bg-neutral-900 text-white">
     <!-- try to start the actual content, which is after contact info, from the
     lower 20% of screen -->
     <header class="min-h-[80vh] flex flex-col">
@@ -29,7 +38,7 @@
         src="/bismilah.svg"
         alt="In the name of God"
         class="invert p-4 bg-linear-to-b from-neutral-300 to-transparent select-none"
-      >
+      />
 
       <div class="flex-1 min-h-4"></div>
 
