@@ -1,9 +1,7 @@
-# each resource must have exactly four fields: title, year, authors, and links
-#
-# title is the official title of the material
-# year is the earliest year listed after the copyright symbol of the material
-# authors is a list of the material's author(s)
-# links is a map from label to url for the material
+# title: official title
+# year: optional publication year, a.k.a copyright year
+# authors: list of authors' full names with middle initials
+# links: label->url dictionary
 
 journal:
   - title: Introduction to Computer Graphics
@@ -319,13 +317,6 @@ journal:
     links:
       book: https://pomax.github.io/bezierinfo
 
-  - title: CuRast
-    year: 2026
-    authors:
-      - Markus Schütz
-    links:
-      project: https://github.com/m-schuetz/CuRast
-
   - title: Kohi Game Engine Series
     year: 2021
     authors:
@@ -485,7 +476,7 @@ journal:
   - title: Beej's Guide to Network Programming, 3rd Edition
     year: 2025
     authors:
-      - Brian "Beej Jorgensen" Hall
+      - Brian B.J. Hall
     links:
       webpage: https://beej.us/guide/bgnet
       pdf: https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf
@@ -508,3 +499,10 @@ journal:
     links:
       webpage: https://realtimerendering.com/raytracinggems/rtg2
       pdf: https://link.springer.com/content/pdf/10.1007/978-1-4842-7185-8.pdf
+
+  - title: Reflections and Refractions in Ray Tracing
+    year: 2006
+    authors:
+      - Bram D. Greve
+    links:
+      pdf: https://graphics.stanford.edu/courses/cs148-10-summer/docs/2006--degreve--reflection_refraction.pdf
