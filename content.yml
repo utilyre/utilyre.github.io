@@ -506,3 +506,26 @@ journal:
       - Bram D. Greve
     links:
       pdf: https://graphics.stanford.edu/courses/cs148-10-summer/docs/2006--degreve--reflection_refraction.pdf
+
+  - title: Physically Based Rendering in Filament
+    year: 2023
+    authors:
+      - Romain Guy
+      - Mathias Agopian
+    links:
+      document: https://google.github.io/filament/Filament.md
+      project: https://github.com/google/filament
+
+  - title: Multi-Core by Default
+    year: 2025
+    authors:
+      - Ryan Fleury
+    links:
+      article: https://dgtlgrove.com/p/multi-core-by-default
+
+  - title: Untangling Lifetimes
+    year: 2022
+    authors:
+      - Ryan Fleury
+    links:
+      article: https://dgtlgrove.com/p/untangling-lifetimes-the-arena-allocator
