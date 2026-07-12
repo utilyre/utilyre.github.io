@@ -529,3 +529,11 @@ journal:
       - Ryan Fleury
     links:
       article: https://dgtlgrove.com/p/untangling-lifetimes-the-arena-allocator
+      lecture: https://youtu.be/TZ5a3gCCZYo
+
+  - title: Data-Oriented Design
+    year: 2014
+    authors:
+      - Mike Acton
+    links:
+      lecture: https://youtu.be/rX0ItVEVjHc
