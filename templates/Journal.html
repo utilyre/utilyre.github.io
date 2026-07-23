@@ -5,7 +5,7 @@
       <h2>Journal</h2>
       <a href="#journal" class="px-2 md:opacity-0 md:group-hover:opacity-100 md:focus:opacity-100 font-bold text-violet-300">#</a>
     </div>
-    <p class="text-sm text-neutral-300">The scholarly content on my radar</p>
+    <p class="text-sm text-neutral-300">Scholarly content on my radar</p>
   </header>
 
   <div class="h-4"></div>
@@ -20,7 +20,7 @@
 
 {{ define "JournalSection" }}
 <section id="journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}">
-  <div class="flex items-center group">
+  <div class="flex items-center group sticky top-0 bg-neutral-900">
     <h3 class="text-xl font-bold">
       {{ with .Year }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}n.d.{{ end }}
     </h3>
@@ -53,7 +53,7 @@
     {{ end }}
   </ul>
 
-  <ul class="flex flex-wrap gap-2 pt-1">
+  <ul class="flex flex-wrap gap-2 py-1">
     {{ range .Links }}
       <li>
         <a
