@@ -1,5 +1,5 @@
 # title: official title
-# year: optional publication year, a.k.a copyright year
+# year: optional publication year or first copyright year
 # authors: list of authors' full names with middle initials
 # links: label->url dictionary
 
@@ -68,14 +68,13 @@ journal:
       book: https://developer.nvidia.com/gpugems/gpugems2
 
   - title: GPU Gems III
-    year: 2007
     authors:
       - NVIDIA Corporation
     links:
       book: https://developer.nvidia.com/gpugems/gpugems3
 
   - title: Physically Based Rendering, 4th Edition
-    year: 2023
+    year: 2004
     authors:
       - Matt Pharr
       - Wenzel Jakob
@@ -84,7 +83,6 @@ journal:
       book: https://pbr-book.org/4ed
 
   - title: Easing Functions
-    year: 2013
     authors:
       - Andrey Sitnik
       - Ivan Solovev
@@ -156,7 +154,7 @@ journal:
       tutorial: https://gist.github.com/tcoppex/443d1dd45f873d96260195d6431b0989
 
   - title: The Lost Art of Structure Packing
-    year: 2018
+    year: 2014
     authors:
       - Eric S. Raymond
     links:
@@ -183,7 +181,7 @@ journal:
     links:
       book: https://webgpufundamentals.org
 
-  - title: Math Primer for Graphics and Game Development
+  - title: 3D Math Primer for Graphics and Game Development
     year: 2011
     authors:
       - Fletcher Dunn
@@ -192,7 +190,7 @@ journal:
       book: https://gamemath.com/book
 
   - title: The Modern JavaScript Tutorial
-    year: 2017
+    year: 2007
     authors:
       - Ilya Kantor
     links:
@@ -326,7 +324,7 @@ journal:
       project: https://github.com/travisvroman/kohi
 
   - title: Performance Ninja
-    year: 2021
+    year: 2025
     authors:
       - Denis Bakhvalov
     links:
@@ -445,7 +443,7 @@ journal:
     links:
 
   - title: The Fourier Transform and Its Applications
-    year: 2019
+    year: 2008
     authors:
       - Brad Osgood
     links:
@@ -462,7 +460,7 @@ journal:
     links:
 
   - title: AMD64 ABI 1.0
-    year: 2025
+    year: 2021
     authors:
       - Hong J. Lu
       - Michael Matz
@@ -474,7 +472,7 @@ journal:
       pdf: https://www.owalle.com/2021/12/30/function-calling-sequence/abi.pdf
 
   - title: Beej's Guide to Network Programming, 3rd Edition
-    year: 2025
+    year: 2026
     authors:
       - Brian B.J. Hall
     links:
