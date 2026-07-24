@@ -544,3 +544,25 @@ journal:
     links:
       paper: https://jcgt.org/published/0009/03/02
       pdf: https://jcgt.org/published/0009/03/02/paper.pdf
+
+  - title: Game Programming Patterns
+    year: 2009
+    authors:
+      - Robert Nystrom
+    links:
+      book: https://gameprogrammingpatterns.com/contents
+
+  - title: Deriving the Perspective Projection Matrix
+    year: 2025
+    authors:
+      - Brandon Berisford
+    links:
+      lecture: https://youtu.be/k_L6edKHKfA
+
+  - title: Fundamentals of Physics, 10th Edition Extended
+    year: 2018
+    authors:
+      - David Halliday
+      - Robert Resnick
+      - Jearl Walker
+    links:
