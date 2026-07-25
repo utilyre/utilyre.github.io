@@ -566,3 +566,10 @@ journal:
       - Robert Resnick
       - Jearl Walker
     links:
+
+  - title: Handles Are the Better Pointers
+    year: 2018
+    authors:
+      - Andre Weissflog
+    links:
+      article: https://floooh.github.io/2018/06/17/handles-vs-pointers
