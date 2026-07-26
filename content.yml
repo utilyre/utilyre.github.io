@@ -573,3 +573,10 @@ journal:
       - Andre Weissflog
     links:
       article: https://floooh.github.io/2018/06/17/handles-vs-pointers
+
+  - title: Memory Allocation Stategies
+    year: 2019
+    authors:
+      - Ginger Bill
+    links:
+      series: https://gingerbill.org/series/memory-allocation-strategies
