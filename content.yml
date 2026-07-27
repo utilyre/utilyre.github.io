@@ -580,3 +580,10 @@ journal:
       - Ginger Bill
     links:
       series: https://gingerbill.org/series/memory-allocation-strategies
+
+  - title: A Fast, Growable Array with Stable Pointers in C
+    year: 2025
+    authors:
+      - Daniel Hooper
+    links:
+      article: https://danielchasehooper.com/posts/segment_array
