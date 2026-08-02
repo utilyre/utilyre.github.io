@@ -572,3 +572,23 @@ journal:
       - Daniel Hooper
     links:
       article: https://danielchasehooper.com/posts/segment_array
+
+  - title: To Early-Z, or Not to Early-Z
+    year: 2025
+    authors:
+      - Matt Pettineo
+    links:
+      article: https://therealmjp.github.io/posts/to-earlyz-or-not-to-earlyz
+
+  - title: Memory Magic
+    year: 2025
+    authors:
+      - Andre Leite
+    links:
+      series: https://andreleite.com/posts/2025/nstl/virtual-memory-explained
+
+  - title: Graphics Programming Weekly Database
+    authors:
+      - Jendrik Illner
+    links:
+      database: https://jendrikillner.com/article_database
