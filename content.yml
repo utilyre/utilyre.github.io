@@ -592,3 +592,10 @@ journal:
       - Jendrik Illner
     links:
       database: https://jendrikillner.com/article_database
+
+  - title: STB
+    year: 2017
+    authors:
+      - Sean T. Barrett
+    links:
+      project: https://github.com/nothings/stb
