@@ -10,7 +10,7 @@
 
   <div class="h-4"></div>
 
-  <div class="flex flex-col gap-16">
+  <div class="flex flex-col">
     {{ range . }}
       {{ template "JournalSection" . }}
     {{ end }}
@@ -19,7 +19,7 @@
 {{ end }}
 
 {{ define "JournalSection" }}
-<section id="journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}">
+<section id="journal-{{ with .Year }}{{ . }}{{ else }}undated{{ end }}" class="group">
   <div class="flex items-center group sticky top-0 bg-neutral-900">
     <h3 class="text-xl font-bold">
       {{ with .Year }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}n.d.{{ end }}
@@ -36,6 +36,8 @@
       {{ template "JournalLog" . }}
     {{ end }}
   </div>
+
+  <div class="h-16 group-last:hidden"></div>
 </section>
 {{ end }}
 
