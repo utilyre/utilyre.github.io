@@ -384,7 +384,7 @@ journal:
     authors:
       - Jason Gregory
     links:
-      webpage: https://gameenginebook.com
+      website: https://gameenginebook.com
 
   - title: Fundamentals of Computer Graphics, 4th Edition
     year: 2016
@@ -404,7 +404,7 @@ journal:
     authors:
       - Gilbert Strang
     links:
-      webpage: https://math.mit.edu/~gs/linearalgebra/ila5/indexila5
+      website: https://math.mit.edu/~gs/linearalgebra/ila5/indexila5
 
   - title: Operating System Concepts, 10th Edition
     year: 2018
@@ -413,7 +413,7 @@ journal:
       - Peter Baer Galvin
       - Greg Gagne
     links:
-      webpage: https://os-book.com/OS10
+      website: https://os-book.com/OS10
 
   - title: Real-Time Rendering, 4th Edition
     year: 2018
@@ -425,7 +425,7 @@ journal:
       - Michal Iwanicki
       - Sebastien Hillaire
     links:
-      webpage: https://realtimerendering.com
+      website: https://realtimerendering.com
 
   - title: Refactoring UI
     year: 2018
@@ -468,7 +468,7 @@ journal:
     authors:
       - Brian B.J. Hall
     links:
-      webpage: https://beej.us/guide/bgnet
+      website: https://beej.us/guide/bgnet
       pdf: https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf
 
   - title: Ray Tracing Gems I
@@ -477,7 +477,7 @@ journal:
       - Eric Haines
       - Tomas Akenine-Moller
     links:
-      webpage: https://realtimerendering.com/raytracinggems/rtg
+      website: https://realtimerendering.com/raytracinggems/rtg
       pdf: https://www.realtimerendering.com/raytracinggems/unofficial_RayTracingGems_v1.9.pdf
 
   - title: Ray Tracing Gems II
@@ -487,7 +487,7 @@ journal:
       - Peter Shirley
       - Ingo Wald
     links:
-      webpage: https://realtimerendering.com/raytracinggems/rtg2
+      website: https://realtimerendering.com/raytracinggems/rtg2
       pdf: https://link.springer.com/content/pdf/10.1007/978-1-4842-7185-8.pdf
 
   - title: Reflections and Refractions in Ray Tracing
@@ -599,3 +599,26 @@ journal:
       - Sean T. Barrett
     links:
       project: https://github.com/nothings/stb
+
+  - title: Geometry Central
+    year: 2019
+    authors:
+      - Nicholas Sharp
+      - Keenan Crane
+      - Yousuf Soliman
+      - Mark Gillespie
+      - Rohan Sawhney
+      - Chris Yu
+    links:
+      document: https://geometry-central.net
+      project: https://github.com/nmwsharp/geometry-central
+
+  - title: CGAL
+    year: 1995
+    authors:
+      - Laurent Rineau
+      - Andreas Fabri
+      - Sebastien Loriot
+    links:
+      website: https://cgal.org
+      project: https://github.com/CGAL/cgal
