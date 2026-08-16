@@ -622,3 +622,10 @@ journal:
     links:
       website: https://cgal.org
       project: https://github.com/CGAL/cgal
+
+  - title: N1570
+    year: 2011
+    authors:
+      - WG14
+    links:
+      pdf: https://open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
