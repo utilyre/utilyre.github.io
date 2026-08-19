@@ -560,6 +560,7 @@ journal:
 
   - title: Blender Developer Handbook
     authors:
+      - Blender Foundation
     links:
       book: https://developer.blender.org/docs/handbook
 
