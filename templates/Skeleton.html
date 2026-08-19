@@ -31,7 +31,9 @@
     {{ with .Style }}<style>{{ . }}</style>{{ end }}
   </head>
 
-  <body class="tracking-wide bg-neutral-900 text-white">
+  <body
+    class="tracking-wide bg-neutral-900 text-white selection:bg-neutral-400 selection:text-neutral-950"
+  >
     <!-- try to start the actual content, which is after contact info, from the
     lower 20% of screen -->
     <header class="min-h-[80vh] flex flex-col">
@@ -48,38 +50,38 @@
         I edit plain text and move bits around for a living.
       </p>
 
-      <div class="h-4"></div>
+      <div class="h-6"></div>
 
-      <nav class="mx-auto w-fit p-2">
+      <nav class="mx-auto w-fit p-2 tracking-wider font-light">
         <ul>
-          <li class="font-mono text-sm">
+          <li>
             utilyre
             <span class="text-neutral-300">at</span>
             gmail
             <span class="text-neutral-300">dot</span>
             com
           </li>
-          <li class="text-sm">
+          <li>
             <a
               href="https://linkedin.com/in/amirabbas-fazelinia"
               target="_blank"
-              class="font-mono text-violet-300 underline md:no-underline md:hover:underline underline-offset-2"
+              class="text-violet-300 underline md:no-underline md:hover:underline underline-offset-2 decoration-from-font"
             >in/amirabbas-fazelinia</a>
             on LinkedIn
           </li>
-          <li class="text-sm">
+          <li>
             <a
               href="https://bsky.app/profile/utilyre.github.io"
               target="_blank"
-              class="font-mono text-violet-300 underline md:no-underline md:hover:underline underline-offset-2"
+              class="text-violet-300 underline md:no-underline md:hover:underline underline-offset-2 decoration-from-font"
             >@utilyre.github.io</a>
             on Bluesky
           </li>
-          <li class="text-sm">
+          <li>
             <a
               href="https://github.com/utilyre"
               target="_blank"
-              class="font-mono text-violet-300 underline md:no-underline md:hover:underline underline-offset-2"
+              class="text-violet-300 underline md:no-underline md:hover:underline underline-offset-2 decoration-from-font"
             >@utilyre</a>
             on GitHub
           </li>
