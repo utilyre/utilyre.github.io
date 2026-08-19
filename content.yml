@@ -211,20 +211,6 @@ journal:
       course: https://15462.courses.cs.cmu.edu/fall2021
       playlist: https://youtube.com/playlist?list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E
 
-  - title: Analytic Fog Rendering with Volumetric Primitives
-    year: 2025
-    authors:
-      - Matejlou
-    links:
-      article: https://matejlou.blog/2025/02/11/analytic-fog-rendering-with-volumetric-primitives
-
-  - title: Surfel-Based Global Illumination on the Web
-    year: 2026
-    authors:
-      - Jure Triglav
-    links:
-      article: https://juretriglav.si/surfel-based-global-illumination-on-the-web
-
   - title: GPU Hardware Database
     authors:
       - Sascha Willems
@@ -267,39 +253,6 @@ journal:
     links:
       tutorial: https://google.github.io/tour-of-wgsl
 
-  - title: Rendering
-    year: 2020
-    authors:
-      - Adam Celarek
-      - Bernhard Kerbl
-    links:
-      course: https://cg.tuwien.ac.at/courses/Rendering/VU.SS2020.html
-      playlist: https://youtube.com/playlist?list=PLmIqTlJ6KsE3e8SQowQ-DjD1eZkBA_Xb9
-
-  - title: Compute Gaussian Blur
-    year: 2022
-    authors:
-      - Lisitsa Nikita
-    links:
-      article: https://lisyarus.github.io/blog/posts/compute-blur
-
-  - title: Ultra-Fast Screen-Space Refractions and Caustics via Newton’s Method
-    year: 2026
-    authors:
-      - Chase Mayer
-      - Ulf Assarsson
-      - Erik Sintorn
-    links:
-      paper: https://jcgt.org/published/0015/01/03
-      pdf: https://jcgt.org/published/0015/01/03/paper.pdf
-
-  - title: Separability, SVD and Low-Rank Approximation of 2D Image Processing Filters
-    year: 2020
-    authors:
-      - Bart Wronski
-    links:
-      article: https://bartwronski.com/2020/02/03/separate-your-filters-svd-and-low-rank-approximation-of-image-filters
-
   - title: A Primer on Bezier Curves
     year: 2011
     authors:
@@ -323,29 +276,12 @@ journal:
       course: https://github.com/dendibakh/perf-ninja
       playlist: https://youtube.com/playlist?list=PLRWO2AL1QAV6bJAU2kgB4xfodGID43Y5d
 
-  - title: Immersive Linear Algebra
-    year: 2015
-    authors:
-      - Jacob Strom
-      - Kalle Astrom
-      - Tomas Akenine-Moller
-    links:
-      book: https://immersivemath.com
-
   - title: The Graphics Codex
     year: 2024
     authors:
       - Morgan McGuire
     links:
-      book: https://graphicscodex.com
-
-  - title: A Scalable and Production-Ready Sky and Atmosphere Rendering Technique
-    year: 2020
-    authors:
-      - Sebastien Hillaire
-    links:
-      paper: https://diglib.eg.org/items/8a3e5350-18b3-46bd-9274-3add5af88c75
-      pdf: https://diglib.eg.org/bitstreams/f17c98cb-60c8-4a58-b459-181dd009ef4e/download
+      book: https://graphicscodex.com/app/app.html
 
   - title: The Rendering Equation
     year: 1986
@@ -593,39 +529,60 @@ journal:
     links:
       database: https://jendrikillner.com/article_database
 
-  - title: STB
-    year: 2017
-    authors:
-      - Sean T. Barrett
-    links:
-      project: https://github.com/nothings/stb
-
-  - title: Geometry Central
-    year: 2019
-    authors:
-      - Nicholas Sharp
-      - Keenan Crane
-      - Yousuf Soliman
-      - Mark Gillespie
-      - Rohan Sawhney
-      - Chris Yu
-    links:
-      document: https://geometry-central.net
-      project: https://github.com/nmwsharp/geometry-central
-
-  - title: CGAL
-    year: 1995
-    authors:
-      - Laurent Rineau
-      - Andreas Fabri
-      - Sebastien Loriot
-    links:
-      website: https://cgal.org
-      project: https://github.com/CGAL/cgal
-
   - title: N1570
     year: 2011
     authors:
       - WG14
     links:
       pdf: https://open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf
+
+  - title: Inverse Kinematics and Foot Locking
+    year: 2026
+    authors:
+      - Daniel Holden
+    links:
+      article: https://theorangeduck.com/page/inverse-kinematics-foot-locking
+
+  - title: Introduction to Computer Graphics
+    year: 2025
+    authors:
+      - Mike Bailey
+    links:
+      course: https://web.engr.oregonstate.edu/~mjb/cs550
+
+  - title: No Graphics API
+    year: 2025
+    authors:
+      - Sebastian Aaltonen
+    links:
+      article: https://sebastianaaltonen.com/blog/no-graphics-api
+      lecture: https://youtu.be/aQv9pUl9PBM
+
+  - title: Blender Developer Handbook
+    authors:
+    links:
+      book: https://developer.blender.org/docs/handbook
+
+  - title: How I Learned Vulkan and Wrote a Small Game Engine with It
+    year: 2024
+    authors:
+      - Elias Daler
+    links:
+      article: https://edw.is/learning-vulkan
+
+  - title: Volumetric Rendering using Path Tracing
+    year: 2025
+    authors:
+      - Zydak
+    links:
+      article: https://zydak.github.io/Clouds
+      project: https://github.com/Zydak/Vulkan-Path-Tracer
+
+  - title: Algorithms for Competitive Programming
+    year: 2014
+    authors:
+      - Jakob Kogler
+      - Oleksandr Kulkov
+      - Rodion Gorkovenko
+    links:
+      book: https://cp-algorithms.com/navigation.html
