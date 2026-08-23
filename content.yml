@@ -400,11 +400,12 @@ journal:
       pdf: https://www.owalle.com/2021/12/30/function-calling-sequence/abi.pdf
 
   - title: Beej's Guide to Network Programming, 3rd Edition
-    year: 2026
+    year: 2019
     authors:
       - Brian B.J. Hall
     links:
       website: https://beej.us/guide/bgnet
+      book: https://beej.us/guide/bgnet/html/split
       pdf: https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf
 
   - title: Ray Tracing Gems I
