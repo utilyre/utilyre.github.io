@@ -456,14 +456,14 @@ journal:
       - Ryan Fleury
     links:
       article: https://dgtlgrove.com/p/untangling-lifetimes-the-arena-allocator
-      lecture: https://youtu.be/TZ5a3gCCZYo
+      talk: https://youtu.be/TZ5a3gCCZYo
 
   - title: Data-Oriented Design
     year: 2014
     authors:
       - Mike Acton
     links:
-      lecture: https://youtu.be/rX0ItVEVjHc
+      talk: https://youtu.be/rX0ItVEVjHc
 
   - title: Hash Functions for GPU Rendering
     year: 2020
@@ -486,7 +486,7 @@ journal:
     authors:
       - Brandon Berisford
     links:
-      lecture: https://youtu.be/k_L6edKHKfA
+      talk: https://youtu.be/k_L6edKHKfA
 
   - title: Fundamentals of Physics, 10th Edition Extended
     year: 2018
@@ -557,7 +557,7 @@ journal:
       - Sebastian Aaltonen
     links:
       article: https://sebastianaaltonen.com/blog/no-graphics-api
-      lecture: https://youtu.be/aQv9pUl9PBM
+      talk: https://youtu.be/aQv9pUl9PBM
 
   - title: Blender Developer Handbook
     authors:
@@ -643,4 +643,4 @@ journal:
       - Marc T. Bosch
     links:
       article: https://marctenbosch.com/quaternions
-      lecture: https://youtu.be/Idlv83CxP-8
+      talk: https://youtu.be/Idlv83CxP-8
