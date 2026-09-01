@@ -440,7 +440,7 @@ journal:
       - Romain Guy
       - Mathias Agopian
     links:
-      document: https://google.github.io/filament/Filament.md
+      docs: https://google.github.io/filament/Filament.md
       project: https://github.com/google/filament
 
   - title: Multi-Core by Default
@@ -588,3 +588,59 @@ journal:
       - Rodion Gorkovenko
     links:
       book: https://cp-algorithms.com/navigation.html
+
+  - title: Linux Kernel Documentation
+    authors:
+      - Kernel Development Community
+    links:
+      docs: https://docs.kernel.org
+
+  - title: Arena Allocator Tips and Tricks
+    year: 2023
+    authors:
+      - Chris Wellons
+    links:
+      article: https://nullprogram.com/blog/2023/09/27
+
+  - title: Robust Wavefront OBJ Model Parsing in C
+    year: 2025
+    authors:
+      - Chris Wellons
+    links:
+      article: https://nullprogram.com/blog/2025/03/02
+
+  - title: Do Not Write Code You Are Not Running
+    year: 2021
+    authors:
+      - Kevin Moran
+    links:
+      article: https://kevinmoran.github.io/posts/dont_write_code_you_arent_running
+
+  - title: Mouse Raycasting Derivation
+    year: 2026
+    authors:
+      - Kevin Moran
+    links:
+      article: https://kevinmoran.github.io/posts/mouse_raycasting_derivation
+
+  - title: The Perils of Future-Coding
+    year: 2013
+    authors:
+      - Sebastian Sylvan
+    links:
+      article: https://sebastiansylvan.com/post/the-perils-of-future-coding
+
+  - title: Naming Convention for Matrix Math
+    year: 2017
+    authors:
+      - Sebastian Sylvan
+    links:
+      article: https://sebastiansylvan.com/post/matrix_naming_convention
+
+  - title: Let Us Remove Quaternions from Every 3D Engine
+    year: 2020
+    authors:
+      - Marc T. Bosch
+    links:
+      article: https://marctenbosch.com/quaternions
+      lecture: https://youtu.be/Idlv83CxP-8
