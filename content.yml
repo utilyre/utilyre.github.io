@@ -644,3 +644,10 @@ journal:
     links:
       article: https://marctenbosch.com/quaternions
       talk: https://youtu.be/Idlv83CxP-8
+
+  - title: Guide to SDF+MSDF Fonts
+    year: 2026
+    authors:
+      - Amit Patel
+    links:
+      article: https://redblobgames.com/articles/sdf-fonts
