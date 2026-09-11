@@ -651,3 +651,19 @@ journal:
       - Amit Patel
     links:
       article: https://redblobgames.com/articles/sdf-fonts
+
+  - title: Improved Alpha-Tested Magnification for Vector Textures and Special Effects
+    year: 2007
+    authors:
+      - Chris Green
+    links:
+      paper: https://dl.acm.org/doi/10.1145/1281500.1281665
+      pdf: https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf
+
+  - title: Shape Decomposition for Multi-Channel Distance Fields
+    year: 2015
+    authors:
+      - Viktor Chlumsky
+    links:
+      thesis: https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf
+      project: https://github.com/Chlumsky/msdfgen
