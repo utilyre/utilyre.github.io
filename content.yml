@@ -728,3 +728,18 @@ journal:
       - Pat Monaghan
     links:
       article: https://patrick-is.cool/posts/2025/on-vaos
+
+  - title: Halfspace
+    authors:
+      - Matt Keeter
+    links:
+      tool: https://mattkeeter.com/projects/halfspace/demo
+      website: https://mattkeeter.com/projects/halfspace
+      project: https://github.com/mkeeter/halfspace
+
+  - title: GSN Composer
+    authors:
+      - Thorsten Thormahlen
+    links:
+      - tool: https://gsn-lib.org
+      - docs: https://gsn-lib.org/docs
