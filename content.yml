@@ -399,7 +399,7 @@ journal:
     links:
       pdf: https://www.owalle.com/2021/12/30/function-calling-sequence/abi.pdf
 
-  - title: Beej's Guide to Network Programming, 3rd Edition
+  - title: "Beej's Guide to Network Programming, 3rd Edition"
     year: 2019
     authors:
       - Brian B.J. Hall
@@ -667,3 +667,64 @@ journal:
     links:
       thesis: https://github.com/Chlumsky/msdfgen/files/3050967/thesis.pdf
       project: https://github.com/Chlumsky/msdfgen
+
+  - title: Many-Worlds Browsing for Control of Multibody Dynamics
+    year: 2007
+    authors:
+      - Christopher D. Twigg
+      - Doug L. James
+    links:
+      paper: https://graphics.cs.cmu.edu/projects/mwb
+      pdf: https://graphics.cs.cmu.edu/projects/mwb/manyWorldsBrowsing.pdf
+
+  - title: Let Us Implement Buffered and Formatted Output
+    year: 2023
+    authors:
+      - Chris Wellons
+    links:
+      article: https://nullprogram.com/blog/2023/02/13
+
+  - title: My Review of the C Standard Library in Practice
+    year: 2023
+    authors:
+      - Chris Wellons
+    links:
+      article: https://nullprogram.com/blog/2023/02/11
+
+  - title: Vertex Quantization in Omniforce Game Engine
+    year: 2024
+    authors:
+      - Daniil Vinnik
+    links:
+      article: https://daniilvinn.github.io/2024/05/04/omniforce-vertex-quantization
+
+  - title: Filtering the Checkerboard Pattern
+    year: 2017
+    authors:
+      - Inigo Quilez
+    links:
+      article: https://iquilezles.org/articles/checkerfiltering
+      demos: https://iquilezles.org/articles/filterableprocedurals
+
+  - title: The Scanline Sweeper
+    year: 2026
+    authors:
+      - Scuff3D Rook
+    links:
+      paper: https://rookandpossum.com/posts/scanline-sweeper
+      pdf: https://rookandpossum.com/papers/scanline_sweeper_preprint.pdf
+      talk: https://youtu.be/B9bztU1sTFA
+
+  - title: "Currents in HDRP's Water System"
+    year: 2026
+    authors:
+      - Anis Benyoub
+    links:
+      article: https://anisb.github.io/2026/09/26/currents-in-hdrps-water-system
+
+  - title: On Vertex Array Objects
+    year: 2025
+    authors:
+      - Pat Monaghan
+    links:
+      article: https://patrick-is.cool/posts/2025/on-vaos
