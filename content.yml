@@ -741,5 +741,5 @@ journal:
     authors:
       - Thorsten Thormahlen
     links:
-      - tool: https://gsn-lib.org
-      - docs: https://gsn-lib.org/docs
+      tool: https://gsn-lib.org
+      docs: https://gsn-lib.org/docs
