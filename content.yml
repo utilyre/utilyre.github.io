@@ -743,3 +743,9 @@ journal:
     links:
       tool: https://gsn-lib.org
       docs: https://gsn-lib.org/docs
+
+  - title: OpenGL Timer Query
+    authors:
+      - Lighthouse3D
+    links:
+      tutorial: https://lighthouse3d.com/tutorials/opengl-timer-query
