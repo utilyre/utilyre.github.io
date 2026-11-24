@@ -749,3 +749,10 @@ journal:
       - Lighthouse3D
     links:
       tutorial: https://lighthouse3d.com/tutorials/opengl-timer-query
+
+  - title: An Introduction to Real-Time Subsurface Scattering
+    year: 2019
+    authors:
+      - Matt Pettineo
+    links:
+      article: https://therealmjp.github.io/posts/sss-intro
